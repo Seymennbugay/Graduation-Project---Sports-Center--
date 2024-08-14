@@ -9,7 +9,7 @@ I then continued with another section, where I added a "Contact Us" part. I inte
 Throughout the development of my page, I paid attention to responsive features. I made sure the page was stylish, that the CSS was as neat as possible, and that it met the project requirements.
 Thank you.
 
-https://66b744d0a80f8014f148a137--timely-cuchufli-56c3d4.netlify.app/#top
+[https://66b744d0a80f8014f148a137--timely-cuchufli-56c3d4.netlify.app/#top](https://adorable-jelly-47ef43.netlify.app/#top)
 
 ![Ekran görüntüsü 2024-08-10 130408](https://github.com/user-attachments/assets/f6ca98e8-fea6-4e62-8331-f6c076b4272e)
 ![Ekran görüntüsü 2024-08-10 130301](https://github.com/user-attachments/assets/f5c98dda-4ef4-4f22-af88-0c714c235418)
