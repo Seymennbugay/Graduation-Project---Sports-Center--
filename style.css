@@ -1,309 +1,338 @@
 /*all implemantations */
-  hr {
-   background-color: orange;
-   height: 8px;
-   width: 100px;
-   border-radius: 10px;
- }
-h1 {
-    font-size: 200%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-body {
-background-color: aliceblue;
-}
-/*all implemantations */
-
-
-
-
-
-/*nav section classes */
-.main-container {
-    background-image: url('hero-man.jpg'); /* Arka plan resmi */
-    background-size: cover; /* Arka plan resmini kapla */
-    background-position: center; /* Arka plan resmini ortala */
-    background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
-}
-
-
-
-/*nav section classes */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #355592;
-    color: white;
-    width: 100%;
-    position:fixed;
-    z-index: 1000;
-
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.navbar-links {
-    display: flex;
-    gap: 15px;
-}
-
-.navbar-links a,
-.navbar-links .btn {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.nav-btn{
-    background-color: #ff8c00;
-    color: white;
-    font-size: 100%;
-    border-radius: 10px;
+hr {
+    background-color: orange;
+    height: 8px;
     width: 100px;
-    border: white;
-}
-.nav-btn:hover {
-    background-color: #ff7000;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 2px;
-    background: #000;
-}
-
-@media (max-width: 768px) {
+    border-radius: 10px;
+  }
+ h1 {
+     font-size: 200%;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ body {
+ background-color: aliceblue;
+ }
+ /*all implemantations */
+ 
+ 
+ 
+ 
+ 
+ /*nav section classes */
+ .main-container {
+     background-image: url('hero-man.jpg'); /* Arka plan resmi */
+     background-size: cover; /* Arka plan resmini kapla */
+     background-position: center; /* Arka plan resmini ortala */
+     background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
+ }
+ 
+ 
+ 
+ /*nav section classes */
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ 
+     background-color: #355592;
+     color: white;
+     width: 100%;
+     position:fixed;
+     z-index: 1000;
+ 
+ }
+ 
+ .logo {
+     font-size: 24px;
+     font-weight: bold;
+ }
+ 
+ .navbar-links {
+     display: flex;
+     gap: 15px;
+ }
+ 
+ .navbar-links a,
+ .navbar-links .btn {
+     text-decoration: none;
+     color: white;
+     padding: 10px 15px;
+     border: none;
+     background: none;
+     cursor: pointer;
+     font-size: 100%;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+ .nav-btn{
+     background-color: #ff8c00;
+     color: white;
+     font-size: 100%;
+     border-radius: 10px;
+     width: 100px;
+     border: white;
+ }
+ .nav-btn:hover {
+     background-color: #ff7000;
+ }
+ 
+ .hamburger {
+     display: none;
+     flex-direction: column;
+     cursor: pointer;
+     gap: 5px;
+ }
+ 
+ .hamburger span {
+     width: 25px;
+     height: 2px;
+     background: #000;
+ }
+ 
+ @media (max-width: 576px) {
     .navbar-links {
-        display: none;
+        display: none; /* Menü kapalı olarak başlar */
         flex-direction: column;
         width: 100%;
+        position: absolute;
+        top: 60px; /* Navbar'ın altından hemen aşağıda olacak */
+        left: 0;
+        background-color: #355592;
+        padding: 10px;
+        z-index: 999; /* Hamburger menünün üstünde kalması için */
     }
-
-    .navbar-links.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-}
-/*nav section classes */
-
-
-
-
-
-/*hero section classses */
-.hero-section{
-  padding-top: 300px;
-}
-
-.hero-header-div {
-    background-color: #355592;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 2px;
-    height: 40px;
-    width: 140px ;
-}
-
-.hero-main-title{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 400%;
-  text-shadow: 10px;
-  color: white;
-  
-}
-.hero-main-paragraph {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 120%;
-    color: white;
-}
-.hero-signupbutton{
-    color: white;
-    background-color: #355592;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    height: 60px;
-    width: 150px;
-    font-size: 130%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 40px;
-}
-.hero-detailsbutton {
-    background-color: transparent; /* Arka planı şeffaf yap */
-    border: 2px solid white; /* Beyaz kenarlık */
-    border-radius: 5px;
-    height: 60px;
-    width: 150px;
-    font-size: 120%;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 40px;
-}
-
-.hero-signupbutton:hover {
-    background-color: #2c3e50; /* Hover sırasında arka plan rengini değiştirir */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover sırasında kutu gölgesini artırır */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Geçiş efektini ekler */
-}
-
-.hero-detailsbutton:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Hover sırasında arka plan rengini değiştirir (şeffaf beyaz) */
-    border-color: #fff; /* Kenarlık rengini beyaz yapar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover sırasında kutu gölgesini artırır */
-    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Geçiş efektini ekler */
-}
-/*hero section classses */
-  
-
-
-
-
-
-
-/* <!-- Hero Section Hour Boxes -->*/
-.hour-box {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: white;
-    border-radius: 10px; /* Köşeleri yuvarla */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Kutu gölgesi ekle */
-    text-align: center;
-    height: 100px;
-    width: 230px;
-    padding: 20px;
-  }
  
-  .hour-number{
-    color: #355592;
-    font-size: 150%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
-/* <!-- Hero Section Hour Boxes -->*/
+     .navbar-links.active {
+         display: flex;
+     }
+ 
+     .hamburger {
+         display: flex;
+     }
+ }
+ /*nav section classes */
+ 
+ 
+ 
+ 
+ 
+ /*hero section classses */
+ .hero-section{
+   padding-top: 300px;
+ }
+ 
+ .hero-header-div {
+     background-color: #355592;
+     color: white;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     padding: 2px;
+     height: 40px;
+     width: 140px ;
+ }
+ 
+ .hero-main-title{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 400%;
+   text-shadow: 10px;
+   color: white;
+   
+ }
+ .hero-main-paragraph {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 120%;
+     color: white;
+ }
+ .hero-signupbutton{
+     color: white;
+     background-color: #355592;
+     padding: 5px;
+     border-radius: 5px;
+     border: none;
+     height: 60px;
+     width: 150px;
+     font-size: 130%;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-bottom: 40px;
+ }
+ .hero-detailsbutton {
+     background-color: transparent; /* Arka planı şeffaf yap */
+     border: 2px solid white; /* Beyaz kenarlık */
+     border-radius: 5px;
+     height: 60px;
+     width: 150px;
+     font-size: 120%;
+     color: white;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     margin-bottom: 40px;
+ }
+ 
+ .hero-signupbutton:hover {
+     background-color: #2c3e50; /* Hover sırasında arka plan rengini değiştirir */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover sırasında kutu gölgesini artırır */
+     transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Geçiş efektini ekler */
+ }
+ 
+ .hero-detailsbutton:hover {
+     background-color: rgba(255, 255, 255, 0.1); /* Hover sırasında arka plan rengini değiştirir (şeffaf beyaz) */
+     border-color: #fff; /* Kenarlık rengini beyaz yapar */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover sırasında kutu gölgesini artırır */
+     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Geçiş efektini ekler */
+ }
 
-
-
-
-
-
-
-/*our classes top part section*/
-.classes-header {
-    text-align: center;
-    color: #355592;
-    font-size: 250%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.classes-paragraph{
-    text-align: center;
-    font-size: 100%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-/*our classes top part section*/
-
-
-
-
-
-
-
-/*<!-- Our Classes Section Yoga Types Section -->*/
-.yoga-types-section{
- text-align: center;
- margin-top: 30px;
- margin-bottom: 30px;
-}
-
-.yoga-type-box{
-    color: white;
-    background-color: #355592;
-    border-radius: 3px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow ekler */
-    text-align: center;
-    width: 120px;
-    height: 50px;
-    padding-top: 5px;
-    font-size: 150%;
-    margin-bottom: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-@media (max-width:  576px) {
-    .yoga-types-section .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Butonları ortalar */
+ @media (max-width: 576px) {
+    .hero-signupbutton,
+    .hero-detailsbutton {
+        width: 95%; /* Butonların genişliğini %95 olarak ayarlar */
+        margin: 10px auto; /* Butonları yatayda ortalar ve altına boşluk ekler */
     }
-    
-    .yoga-types-section .col-md-3 {
-        flex: 0 0 50%; /* İkişerli hizalama */
-        max-width: 50%;
+}
+ /*hero section classses */
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ /* <!-- Hero Section Hour Boxes -->*/
+.hero-section-hour-boxes{
+    margin-top: 20px;
+}
+
+ .hour-box {
+     margin-top: 40px;
+     margin-bottom: 40px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     background-color: white;
+     border-radius: 10px; /* Köşeleri yuvarla */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Kutu gölgesi ekle */
+     text-align: center;
+     height: 100px;
+     width: 230px;
+     padding: 20px;
+   }
+  
+   .hour-number{
+     color: #355592;
+     font-size: 200%;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+
+   @media (max-width: 576px) {
+    .hour-box {
+        width: 60%; /* Genişlik %70 olacak şekilde ayarla */
+        margin: 0 auto 20px auto; /* Ortalamak için üst-alt 0, sağ-sol auto */
+        text-align: center;
     }
 }
-.yoga-type-boxa:hover,
-.yoga-type-box:hover {
-    background-color: #ff8c00; /* Hover sırasında arka plan rengini değiştirir */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover sırasında kutu gölgesini artırır */
-    color: #fff; /* Metin rengini beyaz yapar */
-    transition: all 0.3s ease; /* Geçiş efektini ekler */
-}
-/*<!-- Our Classes Section Yoga Types Section -->/*
-
-
-
-
-
-/*<!-- Our Classes Yoga Picture Part -->*/
-.yoga-picture-part{
+ /* <!-- Hero Section Hour Boxes -->*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*our classes top part section*/
+ .classes-header {
+     text-align: center;
+     color: #355592;
+     font-size: 250%;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .classes-paragraph{
+     text-align: center;
+     font-size: 100%;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ /*our classes top part section*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*<!-- Our Classes Section Yoga Types Section -->*/
+ .yoga-types-section{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
+ 
+ .yoga-type-box{
+     color: white;
+     background-color: #355592;
+     border-radius: 3px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow ekler */
+     text-align: center;
+     width: 120px;
+     height: 50px;
+     padding-top: 5px;
+     font-size: 150%;
+     margin-bottom: 40px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+ @media (max-width:  576px) {
+     .yoga-types-section .row {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center; /* Butonları ortalar */
+     }
+     
+     .yoga-types-section .col-md-3 {
+         flex: 0 0 50%; /* İkişerli hizalama */
+         max-width: 50%;
+     }
+ }
+ .yoga-type-boxa:hover,
+ .yoga-type-box:hover {
+     background-color: #ff8c00; /* Hover sırasında arka plan rengini değiştirir */
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover sırasında kutu gölgesini artırır */
+     color: #fff; /* Metin rengini beyaz yapar */
+     transition: all 0.3s ease; /* Geçiş efektini ekler */
+ }
+ /*<!-- Our Classes Section Yoga Types Section -->/*
+ 
+ 
+ 
+ 
+ 
+ /*<!-- Our Classes Yoga Picture Part -->*/
+ .yoga-types-section{
+    text-align: center;
+ }
+ .yoga-picture-part{
+     margin-top: 30px;
+     margin-bottom: 30px;
+     background-color: white;
+     padding-bottom: 20px;
+     padding-top: 20px;
+ }
+ .yoga-image{
+     height: 270px;
+     border: 4px solid #ff8c00; /* Kenarlık rengi ve kalınlığı */
+     border-radius: 15px; /* Köşeleri yuvarlar */
+     box-shadow: 0 4px 8px #ff8c00;; /* Daha koyu kutu gölgesi ekler */
+     object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */; 
+ }
+ /*<!-- Our Classes Yoga Picture Part -->*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*bmi calculator classes*/
+ .bmi-calculator-section {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.yoga-image{
-    height: 270px;
-    border: 4px solid #ff8c00; /* Kenarlık rengi ve kalınlığı */
-    border-radius: 15px; /* Köşeleri yuvarlar */
-    box-shadow: 0 4px 8px #ff8c00;; /* Daha koyu kutu gölgesi ekler */
-    object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */; 
-}
-/*<!-- Our Classes Yoga Picture Part -->*/
-
-
-
-
-
-
-
-
-/*bmi calculator classes*/
-.bmi-calculator-section {
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px ;
 }
 
 .bmi-calculator-title {
@@ -311,19 +340,21 @@ background-color: aliceblue;
     font-size: 250%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.bmi-calculator-info{
+
+.bmi-calculator-info {
     text-align: center;
     font-size: 150%;
 }
-.bmi-calculator-image{
+
+.bmi-calculator-image {
     height: 270px;
     border: 4px solid #ff8c00; /* Kenarlık rengi ve kalınlığı */
     border-radius: 15px; /* Köşeleri yuvarlar */
-    box-shadow: 0 4px 8px #ff8c00;; /* Daha koyu kutu gölgesi ekler */
-    object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */; 
+    box-shadow: 0 4px 8px #ff8c00; /* Daha koyu kutu gölgesi ekler */
+    object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */
 }
 
-.bmi-submit-btn{
+.bmi-submit-btn {
     background-color: #355592;
     color: white;
     width: 90%;
@@ -332,28 +363,67 @@ background-color: aliceblue;
 }
 
 /* Hover effect */
-.bmi-submit-btn:hover { 
+.bmi-submit-btn:hover {
     background-color: #2a4175;
 }
-/*bmi calculator classes*/
 
-
-
-
-
-
-
-
-/*our best trainers section classes*/
-
-.our-best-trainers-section{
- margin-top: 30px;
- margin-bottom: 30px;
- padding-top: 20px;
- padding-bottom: 20px;
- background-color: aliceblue
+.bmi-chart-container {
+    position: relative;
+    margin-top: 20px;
 }
 
+.bmi-arrow {
+    position: absolute;
+    top: -20px; /* Okun resmin üstünde görünmesini sağlar */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #ff8c00; /* Turuncu üçgenin sivri ucu yukarıda olacak */
+    display: none; /* Başlangıçta oku gizle */
+}
+
+.arrow-underweight {
+    left: 10%; /* İlk parçayı göster */
+}
+
+.arrow-normal {
+    left: 30%; /* İkinci parçayı göster */
+}
+
+.arrow-overweight {
+    left: 50%; /* Üçüncü parçayı göster */
+}
+
+.arrow-obese {
+    left: 70%; /* Dördüncü parçayı göster */
+}
+
+.arrow-severely-obese {
+    left: 90%; /* Beşinci parçayı göster */
+}
+
+ /*bmi calculator classes*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*our best trainers section classes*/
+ 
+ .our-best-trainers-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+}
+.our-best-trainers-row{
+    text-align: center;
+}
 .our-best-trainers-title{
     color: #355592;
     font-size: 250%;
@@ -367,8 +437,7 @@ background-color: aliceblue;
 }
 
 .our-best-trainers-img {
-    margin-bottom: 10px;
-    height: 270px;
+    margin-bottom: 30px;
     border: 4px solid #ff8c00; /* Kenarlık rengi ve kalınlığı */
     border-radius: 15px; /* Köşeleri yuvarlar */
     box-shadow: 0 4px 8px #ff8c00; /* Kutu gölgesi ekler */
@@ -380,251 +449,281 @@ background-color: aliceblue;
 .our-best-trainers-img:hover {
     box-shadow: 0 8px 16px #ff8c00; /* Hover durumunda daha koyu gölge */
 }
-/*our best trainers section classes*/
-
-
-
-
-
-
-
-/*  <!-- Purchase From Us -->*/
- .purchase-from-us-container{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+@media (max-width: 576px) {
+    .our-best-trainers-row {
+        display: flex;
+        justify-content: center;
+    }
+    .our-best-trainers-col {
+        flex: 0 0 80%; /* Sütunun genişliğini sayfanın %80'i olacak şekilde ayarlar */
+        max-width: 80%;
+        margin-bottom: 20px; /* Sütunlar arası boşluk için */
+    }
+    .our-best-trainers-img {
+        width: 100%; /* Resimlerin sütunu tamamen kaplamasını sağlar */
+    }
+}
+ /*our best trainers section classes*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*  <!-- Purchase From Us -->*/
+  .purchase-from-us-container{
+     margin-top: 30px;
+     margin-bottom: 30px;
+     background-color: white;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     width: 100%;
+  }
+ 
+ .purchase-from-us-title{
+     color: #355592;
+     font-size: 250%;
+     text-align: center;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+ .purchase-from-us-description{
+     text-align: center;
+     margin-bottom: 20px; 
+ }
+ 
+ 
+ 
+ .purchase-from-us-card{
+     margin-bottom: 10px;
+     border-radius: 15px; /* Köşeleri yuvarlar */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Daha koyu kutu gölgesi ekler */
+     object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */;  
+ }
+ 
+ 
+ .purchase-from-us-card-title{
+  text-align: center;
+  font-size: 120%;
+  font-weight: bold;
+ }
+ 
+ .purchase-from-us-card-description{
+  text-align: center;
+  font-size: 80%;
+  font-weight: bold;
+ }
+ 
+ .purchase-from-us-card-description .old-price {
+     text-decoration: line-through; /* Üstü çizili yapar */
+   }
+ 
+   .purchase-from-us-card-footer {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .purchase-from-us-card-icon {
+     margin-right: 30px;
+     font-size: 100% ;/* İkon boyutunu ayarlamak için */
+     margin-left: 2px;
+ }
+ 
+ .purchase-from-us-card-info {
+     font-size: 100% ;/* Metin boyutunu ayarlamak için */
+     font-weight: bold;
+ }
+ /*  <!-- Purchase From Us -->*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*  <!--rewiew client section-->*/
+ .rewiew-client-section-main-div{
+     margin-top: 30px;
+     margin-bottom: 30px;
+     text-align: center;
+ }
+ 
+ .rewiew-client-section-header-title{
+     color: #355592;
+     font-size: 250%;
+     text-align: center;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+ }
+ 
+ .rewiew-client-section-img{
+     border-radius: 50px;
+     height: 50px;
+     float: left;
+     margin-right: 15px;
+     height: auto;
+ }
+ 
+ .rewiew-client-section-p1 {
+     float: left; /* Paragrafları sola hizalar */
+     margin: 0; /* Paragrafların varsayılan margin değerlerini kaldırır */
+     padding: 0; /* Paragrafların varsayılan padding değerlerini kaldırır */
+     font-weight: bold;
+ }
+ 
+ .rewiew-client-section-div {
+     clear: both; /* Resim ve paragraflardan sonraki içeriğin altına yerleştirir */
+     margin-top: 20px; /* Div ile yukarıdaki içeriğin arasına boşluk ekler */
+     background-color: #355592;
+     color: white;
+     border-radius: 2px;
+     width: 80%;
+     margin-top: 110px;
+     margin-bottom:50px;
+     padding: 10px;
+     box-shadow: 0 4px 8px #355592;; /* Daha koyu kutu gölgesi ekler */
+     object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */;  
  }
 
-.purchase-from-us-title{
-    color: #355592;
-    font-size: 250%;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+ .triangle {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 150px 200px 0 0;
+    border-color: #FF4532 transparent transparent transparent;
+    transform: rotate(0deg);
+ }
 
-.purchase-from-us-description{
-    text-align: center;
-    margin-bottom: 20px; 
-}
-
-
-
-.purchase-from-us-card{
-    margin-bottom: 10px;
-    border-radius: 15px; /* Köşeleri yuvarlar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Daha koyu kutu gölgesi ekler */
-    object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */;  
-}
-
-
-.purchase-from-us-card-title{
- text-align: center;
- font-size: 120%;
- font-weight: bold;
-}
-
-.purchase-from-us-card-description{
- text-align: center;
- font-size: 80%;
- font-weight: bold;
-}
-
-.purchase-from-us-card-description .old-price {
-    text-decoration: line-through; /* Üstü çizili yapar */
-  }
-
-  .purchase-from-us-card-footer {
-    display: flex;
-    align-items: center;
-}
-
-.purchase-from-us-card-icon {
-    margin-right: 30px;
-    font-size: 100% ;/* İkon boyutunu ayarlamak için */
-    margin-left: 2px;
-}
-
-.purchase-from-us-card-info {
-    font-size: 100% ;/* Metin boyutunu ayarlamak için */
-    font-weight: bold;
-}
-/*  <!-- Purchase From Us -->*/
-
-
-
-
-
-
-
-/*  <!--rewiew client section-->*/
-.rewiew-client-section-main-div{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.rewiew-client-section-header-title{
-    color: #355592;
-    font-size: 250%;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-}
-
-.rewiew-client-section-img{
-    border-radius: 50px;
-    height: 50px;
-    float: left;
-    margin-right: 15px;
-    height: auto;
-}
-
-.rewiew-client-section-p1 {
-    float: left; /* Paragrafları sola hizalar */
-    margin: 0; /* Paragrafların varsayılan margin değerlerini kaldırır */
-    padding: 0; /* Paragrafların varsayılan padding değerlerini kaldırır */
-    font-weight: bold;
-}
-
-.rewiew-client-section-div {
-    clear: both; /* Resim ve paragraflardan sonraki içeriğin altına yerleştirir */
-    margin-top: 20px; /* Div ile yukarıdaki içeriğin arasına boşluk ekler */
-    background-color: #355592;
-    color: white;
-    border-radius: 2px;
-    width: 80%;
-    margin-top: 110px;
-    margin-bottom:50px;
-    padding: 10px;
-    box-shadow: 0 4px 8px #355592;; /* Daha koyu kutu gölgesi ekler */
-    object-fit: cover; /* Resmin kapsayıcıya uyum sağlamasını sağlar */;  
-}
-/* <!--rewiew client section-->*/
-
-
-
-
-
-
-
-/* <!--contact-us-section-->*/
-.contact-us-section-div  {
- background-color: white;
- margin-top: 30px;
- margin-bottom: 30px; 
- padding-top: 20px;
- padding-bottom: 20px;
-}
-
-.rewiew-client-section-main-div  {
-    text-align: center;
-    font-size: 100%;  
-}
-
-.contact-us-section-header-title   {
-    color: #355592;
-    font-size: 250%;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
-}
-
-.contact-us-section-h1a   {
-   font-size: 130%; 
-   font-weight: 100;
-   font-family: 'Roboto', sans-serif;
-
-}
-
-.contact-us-section-h1b   {
+ @media (max-width: 576px) {
+    .rewiew-client-section-div {
+        width: 95%; 
+        margin-left: auto; /* Div'i yatayda ortalar */
+        margin-right: auto; /* Div'i yatayda ortalar */
+    }}
+ /* <!--rewiew client section-->*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* <!--contact-us-section-->*/
+ .contact-us-section-div  {
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }
+ 
+ .rewiew-client-section-main-div  {
+     text-align: center;
+     font-size: 100%;  
+ }
+ 
+ .contact-us-section-header-title   {
+     color: #355592;
+     font-size: 250%;
+     text-align: center;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+ }
+ 
+ .contact-us-section-h1a   {
     font-size: 130%; 
     font-weight: 100;
-    font-family: 'Roboto', sans-serif;   
-}
-
-.contact-us-section-h1c   {
-    font-size: 150%; 
-    font-weight: 100;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.contact-us-section-nameinput   {
-    background-color: aliceblue;
-    border: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 30px;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow eklemek için */
-}
-
-.contact-us-section-mailinput   {
-    background-color: aliceblue;
-    border: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 30px;
-    margin-bottom: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow eklemek için */
-}
-
-.contact-us-section-messageinput   {
-    background-color: aliceblue;
-    border: white;
-    border-radius: 10px;
-    width: 80%;
-    height: 80px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow eklemek için */
-}
-
-/* <!--contact-us-section-->*/
-
-
-
-
-/*  footer styles  */
-.footer {
-    width: 100%;
-    background-color: #355592;
-    margin-top: 60px;
-    color: white; /* Footer genel yazı rengi */
-}
-
-.footer-logo {
-    margin-bottom: 20px;
-    text-align: left; /* Hem PC hem de mobilde sola hizalama */
-}
-
-.footer-logo img {
-    max-width: 300px;
-    height: auto;
-}
-
-.footer-description {
-    margin-bottom: 20px;
-}
-
-ul.list-unstyled {
-    padding: 0;
-}
-
-ul.list-unstyled li {
-    margin: 5px 0;
-}
-
-ul.list-unstyled li a {
-    color: white; /* Bağlantı rengi */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-ul.list-unstyled li a:hover {
-    color: #a1c4fd; /* Hover rengini değiştirebilirsiniz */
-}
-
-@media (max-width:  576px) {
-   
-}
-/*  footer styles  */
+ 
+ }
+ 
+ .contact-us-section-h1b   {
+     font-size: 130%; 
+     font-weight: 100;
+     font-family: 'Roboto', sans-serif;   
+ }
+ 
+ .contact-us-section-h1c   {
+     font-size: 150%; 
+     font-weight: 100;
+     font-family: 'Roboto', sans-serif;
+     font-weight: bold;
+ }
+ 
+ .contact-us-section-nameinput   {
+     background-color: aliceblue;
+     border: white;
+     border-radius: 10px;
+     width: 80%;
+     height: 30px;
+     margin-bottom: 5px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow eklemek için */
+ }
+ 
+ .contact-us-section-mailinput   {
+     background-color: aliceblue;
+     border: white;
+     border-radius: 10px;
+     width: 80%;
+     height: 30px;
+     margin-bottom: 5px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow eklemek için */
+ }
+ 
+ .contact-us-section-messageinput   {
+     background-color: aliceblue;
+     border: white;
+     border-radius: 10px;
+     width: 80%;
+     height: 80px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow eklemek için */
+ }
+ 
+ /* <!--contact-us-section-->*/
+ 
+ 
+ 
+ 
+ /*  footer styles  */
+ .footer {
+     width: 100%;
+     background-color: #355592;
+     margin-top: 60px;
+     color: white; /* Footer genel yazı rengi */
+ }
+ 
+ .footer-logo {
+     margin-bottom: 20px;
+     text-align: left; /* Hem PC hem de mobilde sola hizalama */
+ }
+ 
+ .footer-logo img {
+     max-width: 300px;
+     height: auto;
+ }
+ 
+ .footer-description {
+     margin-bottom: 20px;
+ }
+ 
+ ul.list-unstyled {
+     padding: 0;
+ }
+ 
+ ul.list-unstyled li {
+     margin: 5px 0;
+ }
+ 
+ ul.list-unstyled li a {
+     color: white; /* Bağlantı rengi */
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+ 
+ ul.list-unstyled li a:hover {
+     color: #a1c4fd; /* Hover rengini değiştirebilirsiniz */
+ }
+ 
+ @media (max-width:  576px) {
+    
+ }
+ /*  footer styles  */
